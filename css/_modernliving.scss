@@ -1,0 +1,36 @@
+.modernliving{
+    width: 100%;
+    display: flex;
+    .modernliving-left{
+        width: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .modernliving-right{
+        width: 50%;
+        background-color: #ef8b59;
+        color: white;
+        padding: 68px 0 60px 53px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title{
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 46px;
+        }
+        .text{
+            max-width: 540px;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            line-height: 22px;
+            .text01{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

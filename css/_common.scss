@@ -1,0 +1,35 @@
+body {
+    // font-family: "Poppins", serif;
+    font-family: "Merriweather", serif;
+    line-height: 30px;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    font-weight: 400;
+    color: #5b5b5b;
+}
+.main {
+    overflow: hidden;
+}
+.container {
+    width: 1145px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+    height: auto;
+}
+.clearfix {
+    &:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+    }
+}

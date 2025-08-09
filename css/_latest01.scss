@@ -1,0 +1,84 @@
+.latest01 {
+    background-color:#f9f3eb;
+    width: 100%;
+    .container{
+        padding-top: 122px;
+        padding-bottom: 115px;
+        .title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 0;
+            color: #2d3436;
+        }
+        .text{ 
+            text-align: center;
+            position: relative;
+            letter-spacing: 0;
+            color: #a3a3a3;
+            margin-top: 15px ;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -27px;
+                left: 50%;
+                border: 1px solid #a3a3a3;
+                transform: translate(-50%);
+                width: 60px;
+            }   
+        }
+        .group{
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            padding-top: 86px;
+            .card{
+                background-color: #fff;
+                position: relative;
+                width: calc(366/1144*100%);
+                .review01{
+                    padding-left: 28px;
+                    padding-right: 32px;
+                    padding-top: 43px;
+                    position: relative;
+                    .ellipse{
+                        position: absolute;
+                        left: 30px;
+                        top: -26px;
+                    }
+                    .day{
+                        font-size: 14px;
+                        color: #666666;
+                    }
+                    .here{
+                        font-size: 21px;
+                        margin-top: 30px;
+                        letter-spacing: 1.3px;
+                        color: black;
+                    }
+                    .card-text{
+                        position: relative;
+                        font-size: 14px;
+                        margin-top: 17px;
+                    }  
+                    .buttons{
+                        font-size: 15px;
+                        color: #e73100;
+                        margin-top: 22px;
+                        font-size: 16px;
+                        padding: 13px 0;
+                        position: relative;
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: -28px;
+                            right: -32px;
+                            border-top: 1px solid #a3a3a3;
+                        }
+                    }     
+                } 
+            }
+        } 
+    }       
+}           

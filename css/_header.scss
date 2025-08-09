@@ -1,0 +1,108 @@
+.header {
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 79px;
+    &__logo {
+        width: 100px;
+    }
+    /* Menu */
+    &__menu {
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        &--ul {
+            /* background-color: gray; */
+            display: flex;
+            list-style: none;
+            & > li {
+                /* background: yellow; */
+                padding: 30px 10px;
+                position: relative;
+            }
+            & > li a {
+                text-decoration: none;
+                transition: all ease 0.3s;
+                color: gray;
+                &:hover {
+                    color: red;
+                }
+                &.icon {
+                    padding-right: 18px;
+                    position: relative;
+                }
+                &.icon:after {
+                    content: "";
+                    border-top: 8px solid #000;
+                    border-right: 6px solid transparent;
+                    border-left: 6px solid transparent;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}
+
+.header__menu ul.submenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 116px;
+    display: none;
+    background-color: blue;
+    padding: 0 15px;
+    color: #fff;
+}
+.header__menu ul.submenu li {
+    border-bottom: 1px solid #fff;
+    padding: 15px 0;
+}
+.header__menu ul.submenu li a {
+    color: #fff !important;
+    &:hover {
+        color: red !important;
+    }
+}
+.header__menu ul.header__menu--ul li:hover ul.submenu {
+    display: block;
+}
+.buy-now {
+    margin-left: 30px;
+    display: inline-block;
+    padding: 10px 16px;
+    text-decoration: none; 
+    border: 2px solid black;
+    border-radius:5px;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    &:hover{
+        background-color: blue;
+        color: #fff;
+    }
+}
+
+/* End Menu */
+
+/* Search */
+.header__search input {
+    padding: 10px;
+}
+/* End Search */
+
+/* Login */
+.header__login {
+    margin-left: 50px;
+}
+.header__login ul {
+    display: flex;
+}
+.header__login ul li {
+    padding: 10px;
+}
+/* End Login */

@@ -1,0 +1,60 @@
+.newletter {
+    background-color:#f9f3eb;
+    width: 100%;
+    .container{
+        padding-top: 127px;
+        padding-bottom: 120px;
+        .title{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 0;
+            color: #2d3436;
+        }
+        .text{ 
+            text-align: center;
+            position: relative;
+            letter-spacing: 0;
+            color: #a3a3a3;
+            margin-top: 15px ;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -27px;
+                left: 50%;
+                border: 1px solid #a3a3a3;
+                transform: translate(-50%);
+                width: 60px;
+            }   
+        }
+        .group{
+            padding-top: 85px;
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .input{
+                border-radius: 30px 0 0 30px;
+                border: 1px solid black;
+                font-size: 15px;
+                width: 580px;
+                padding: 20px 30px;
+
+            }
+            .buttons{
+                padding: 18px 20px 17px;
+                width: 150px;
+                text-align: center;
+                background-color:#222222;
+                color: #f1f1f1;
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 0 30px 30px 0;
+                text-decoration: none;
+
+            }
+        }
+    }
+}    

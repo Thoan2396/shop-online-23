@@ -1,0 +1,37 @@
+.gallerys {
+    display: flex;
+    background-color: #f9f3eb;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+    .left {
+        .down{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            padding-top: 20px;
+        } 
+    }
+    .right{
+        .up{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            padding-bottom: 20px;
+        }
+        .photo{
+            position: relative;
+            .cate{
+                position: absolute;
+                bottom: 23px;
+                left: 26px;
+                background-color: #fafafa;
+                color: #000;
+                padding: 10px 27px;
+                font-size: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+}

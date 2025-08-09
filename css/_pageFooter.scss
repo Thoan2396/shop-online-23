@@ -1,0 +1,20 @@
+.pageFooter{
+    padding-top: 89px;
+    // padding: 0 156px;
+    .footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 147px;
+        .pay{
+            display: flex;
+            gap: 9px;
+        }
+        .page{
+            font-size: 15px;
+        }
+
+    }
+}
