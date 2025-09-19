@@ -1,4 +1,4 @@
-shop online
+SHOP ONLINE
 
 Live Demo: https://thoan2396.github.io/shop-online-23/ 
 
