@@ -1,7 +1,7 @@
 shop online
 
-Live Demo: (cập nhật link GitHub Pages sau khi deploy)  
-Repo: https://thoan2396.github.io/shop-online-23/
+Live Demo: https://thoan2396.github.io/shop-online-23/ 
+Repo: https://github.com/Thoan2396/shop-online-23
 
  概要
 - 家具コレクションを紹介するランディングページ  
