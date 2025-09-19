@@ -1,5 +1,4 @@
 .header {
-    background-color: pink;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,26 +7,23 @@
     &__logo {
         width: 100px;
     }
-    /* Menu */
     &__menu {
         margin-left: 40px;
         display: flex;
         align-items: center;
         &--ul {
-            /* background-color: gray; */
             display: flex;
             list-style: none;
             & > li {
-                /* background: yellow; */
                 padding: 30px 10px;
                 position: relative;
             }
             & > li a {
                 text-decoration: none;
                 transition: all ease 0.3s;
-                color: gray;
+                color: black;
                 &:hover {
-                    color: red;
+                    color: #ef8b59 ;
                 }
                 &.icon {
                     padding-right: 18px;
@@ -42,6 +38,9 @@
                     right: 0;
                     top: 50%;
                     margin-top: -4px;
+                    &:hover {
+                    color: red;
+                }
                 }
             }
         }
@@ -54,7 +53,7 @@
     top: 100%;
     width: 116px;
     display: none;
-    background-color: blue;
+    background-color: #ef8b59;
     padding: 0 15px;
     color: #fff;
 }
@@ -71,38 +70,5 @@
 .header__menu ul.header__menu--ul li:hover ul.submenu {
     display: block;
 }
-.buy-now {
-    margin-left: 30px;
-    display: inline-block;
-    padding: 10px 16px;
-    text-decoration: none; 
-    border: 2px solid black;
-    border-radius:5px;
-    color: black;
-    text-align: center;
-    white-space: nowrap;
-    &:hover{
-        background-color: blue;
-        color: #fff;
-    }
-}
+.header__menu > .header__menu--ul > li > a.icon img { width: 18px !important; height: 18px !important; }
 
-/* End Menu */
-
-/* Search */
-.header__search input {
-    padding: 10px;
-}
-/* End Search */
-
-/* Login */
-.header__login {
-    margin-left: 50px;
-}
-.header__login ul {
-    display: flex;
-}
-.header__login ul li {
-    padding: 10px;
-}
-/* End Login */

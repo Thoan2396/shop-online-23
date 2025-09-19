@@ -9,7 +9,7 @@ body {
   letter-spacing: 0;
   line-height: 24px;
   font-weight: 400;
-  color: #5b5b5b;
+  color: black;
 }
 
 .main {
@@ -41,13 +41,11 @@ img {
 }
 
 .header {
-  background-color: pink;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
   height: 79px;
-  /* Menu */
 }
 .header__logo {
   width: 100px;
@@ -58,22 +56,20 @@ img {
   align-items: center;
 }
 .header__menu--ul {
-  /* background-color: gray; */
   display: flex;
   list-style: none;
 }
 .header__menu--ul > li {
-  /* background: yellow; */
   padding: 30px 10px;
   position: relative;
 }
 .header__menu--ul > li a {
   text-decoration: none;
   transition: all ease 0.3s;
-  color: gray;
+  color: black;
 }
 .header__menu--ul > li a:hover {
-  color: red;
+  color: #ef8b59;
 }
 .header__menu--ul > li a.icon {
   padding-right: 18px;
@@ -89,6 +85,9 @@ img {
   top: 50%;
   margin-top: -4px;
 }
+.header__menu--ul > li a.icon:after:hover {
+  color: red;
+}
 
 .header__menu ul.submenu {
   position: absolute;
@@ -96,7 +95,7 @@ img {
   top: 100%;
   width: 116px;
   display: none;
-  background-color: blue;
+  background-color: #ef8b59;
   padding: 0 15px;
   color: #fff;
 }
@@ -117,43 +116,11 @@ img {
   display: block;
 }
 
-.buy-now {
-  margin-left: 30px;
-  display: inline-block;
-  padding: 10px 16px;
-  text-decoration: none;
-  border: 2px solid black;
-  border-radius: 5px;
-  color: black;
-  text-align: center;
-  white-space: nowrap;
-}
-.buy-now:hover {
-  background-color: blue;
-  color: #fff;
+.header__menu > .header__menu--ul > li > a.icon img {
+  width: 18px !important;
+  height: 18px !important;
 }
 
-/* End Menu */
-/* Search */
-.header__search input {
-  padding: 10px;
-}
-
-/* End Search */
-/* Login */
-.header__login {
-  margin-left: 50px;
-}
-
-.header__login ul {
-  display: flex;
-}
-
-.header__login ul li {
-  padding: 10px;
-}
-
-/* End Login */
 .keyvisual {
   background-color: #f9f3eb;
 }
@@ -200,29 +167,29 @@ img {
   width: 715px;
 }
 
-.products {
+.topnewproducts {
   background-color: white;
   width: 100%;
 }
-.products .container {
+.topnewproducts .container {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.products .container .title {
+.topnewproducts .container .title {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 0;
   color: #2d3436;
 }
-.products .container .text {
+.topnewproducts .container .text {
   text-align: center;
   position: relative;
   letter-spacing: 0;
   color: #a3a3a3;
   margin-top: 13px;
 }
-.products .container .text::after {
+.topnewproducts .container .text::after {
   content: "";
   position: absolute;
   bottom: -27px;
@@ -231,42 +198,42 @@ img {
   transform: translate(-50%);
   width: 60px;
 }
-.products .group {
+.topnewproducts .group {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
   padding-top: 73px;
 }
-.products .group .card {
+.topnewproducts .group .card {
   background-color: white;
   border-radius: 0 0 10px 10px;
 }
-.products .group .card .review {
+.topnewproducts .group .card .review {
   position: relative;
 }
-.products .group .card .review .info {
+.topnewproducts .group .card .review .info {
   padding: 18px 20px 15px;
 }
-.products .group .card .review .info .rating {
+.topnewproducts .group .card .review .info .rating {
   font-size: 16px;
 }
-.products .group .card .review .info .p1 {
+.topnewproducts .group .card .review .info .p1 {
   margin-top: 6px;
   font-size: 17px;
   letter-spacing: 0;
   color: black;
 }
-.products .group .card .review .info .prices {
+.topnewproducts .group .card .review .info .prices {
   padding-top: 10px;
 }
-.products .group .card .review .info .prices .old {
+.topnewproducts .group .card .review .info .prices .old {
   color: #a3a3a3;
   position: relative;
   font-size: 15px;
   padding-right: 14px;
 }
-.products .group .card .review .info .prices .old:after {
+.topnewproducts .group .card .review .info .prices .old:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -274,13 +241,13 @@ img {
   border: 1px solid #c0bbb4;
   width: 60px;
 }
-.products .group .card .review .info .prices .new {
+.topnewproducts .group .card .review .info .prices .new {
   font-size: 17px;
   font-weight: 600;
   color: #ef8b59;
 }
 
-.gallerys {
+.catagory {
   display: flex;
   background-color: #f9f3eb;
   gap: 30px;
@@ -288,22 +255,22 @@ img {
   align-items: center;
   padding: 120px 0;
 }
-.gallerys .left .down {
+.catagory .left .down {
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
   padding-top: 20px;
 }
-.gallerys .right .up {
+.catagory .right .up {
   display: flex;
   flex-wrap: wrap;
   gap: 28px;
   padding-bottom: 20px;
 }
-.gallerys .right .photo {
+.catagory .right .photo {
   position: relative;
 }
-.gallerys .right .photo .cate {
+.catagory .right .photo .cate {
   position: absolute;
   bottom: 23px;
   left: 26px;
@@ -312,6 +279,9 @@ img {
   padding: 10px 27px;
   font-size: 18px;
   text-decoration: none;
+}
+.catagory .right .photo .cate:hover {
+  background-color: #ef8b59;
 }
 
 .deals {
@@ -502,8 +472,6 @@ img {
   margin-top: 17px;
 }
 .latest01 .container .group .card .review01 .buttons {
-  font-size: 15px;
-  color: #e73100;
   margin-top: 22px;
   font-size: 16px;
   padding: 13px 0;
@@ -516,6 +484,10 @@ img {
   left: -28px;
   right: -32px;
   border-top: 1px solid #a3a3a3;
+}
+.latest01 .container .group .card .review01 .buttons a {
+  text-decoration: none;
+  color: red;
 }
 
 .latest02 {
@@ -646,7 +618,12 @@ img {
   max-width: 786px;
 }
 .company .container .card01 img {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+.company .container .card01 .icons {
+  display: flex;
+  gap: 15px;
+  width: 150px;
 }
 .company .container .card {
   max-width: 450px;
@@ -657,6 +634,8 @@ img {
 .company .container h4 {
   font-size: 18px;
   margin-bottom: 33px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 .company .container p {
   font-size: 14px;

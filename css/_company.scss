@@ -10,7 +10,12 @@
         .card01{
             max-width: 786px;
             img{
-                padding-bottom: 10px;
+                padding-bottom: 20px;
+            }
+            .icons{
+                display: flex;
+                gap: 15px;
+                width: 150px;
             }
         }
         .card{
@@ -22,6 +27,8 @@
         h4{
             font-size: 18px;
             margin-bottom: 33px;
+            letter-spacing: 2px;
+            font-weight: 500;
         }
         p{
             font-size: 14px;

@@ -62,8 +62,6 @@
                         margin-top: 17px;
                     }  
                     .buttons{
-                        font-size: 15px;
-                        color: #e73100;
                         margin-top: 22px;
                         font-size: 16px;
                         padding: 13px 0;
@@ -76,7 +74,12 @@
                             right: -32px;
                             border-top: 1px solid #a3a3a3;
                         }
-                    }     
+                    } 
+                    .buttons a{
+                        text-decoration: none;
+                        color: red;
+                    }
+
                 } 
             }
         } 

@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thoan</title>
-    <!-- fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
-    <!-- css -->
     <link rel="stylesheet" href="plugin/slick/slick.css">
     <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -21,21 +16,47 @@
         </div>
         <nav class="header__menu">
             <ul class="header__menu--ul">
-                <li><a href="bai-viet.html">Home</a></li>
                 <li>
-                    <a class="icon" href="hoi-dap.html">Live demo</a>
+                    <a class="icon" href="#">HOME</a>
+                        <ul class="submenu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">FEATURED</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="icon" href="#">FEATURED</a>
+                        <ul class="submenu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">FEATURED</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </li>                
+                <li>
+                    <a class="icon" href="#">SHOP</a>
                     <ul class="submenu">
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">FEATURED</a></li>
                         <li><a href="#">SHOP</a></li>
                         <li><a href="#">BLOG</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">CONTACT</a></li>
                     </ul>
                 </li>
-                <li><a href="thao-luan.html">Demo Block</a></li>
+                <li>
+                    <a class="icon" href="#">BLOG</a>
+                    <ul class="submenu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">FEATURED</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>                    
+                </li>
+                <li><a class="#" href="#">ABOUT</a></li>
+                <li><a class="#" href="#">CONTACT</a></li> 
+                <!-- <li><a href="#" ><img src="./images/user.png"alt="user"></a></li>
+                <li><a href="#"><img src="./images/shopping-basket.png"alt="cart"></a></li>    -->
             </ul>
-            <a class="buy-now" href="buy-now.html">Buy now</a>
         </nav>
     </header>
     <main class="main">
@@ -51,13 +72,13 @@
                 </div>
             </div>
         </section>
-        <section class="products">
+        <section class="topnewproducts">
             <div class="container">
                 <h2 class="title">Top New Products</h2>
                 <p class="text">Praesent ut ligula non mi curabitur at lacus elit</p>
                 <div class="group">
                     <div class="card wow fadeInLeft">
-                        <img src="./images/products-img1.jpg" alt="Image">
+                        <a href="#"><img src="./images/top1.png" alt="top1"></a>
                         <div class="review">
                             <div class="info">
                                 <div class="rating">
@@ -77,7 +98,7 @@
                         </div>
                     </div>
                     <div class="card wow fadeInUp">
-                        <img src="./images/products-img2.jpg" alt="Image">
+                        <a href="#"><img src="./images/top2.png" alt="top2"></a>
                         <div class="review">
                             
                             <div class="info">
@@ -98,7 +119,7 @@
                         </div>
                     </div>
                     <div class="card wow fadeInDown">
-                        <img src="./images/products-img3.jpg" alt="Image">
+                        <a href="#"><img src="./images/top3.png" alt="top3"></a>
                         <div class="review">
                             <div class="info">
                                 <div class="rating">
@@ -118,7 +139,7 @@
                         </div>
                     </div>
                     <div class="card wow fadeInRight">
-                        <img src="./images/products-img4.jpg" alt="Image">
+                        <a href="#"><img src="./images/top4.png" alt="top4"></a>
                         <div class="review">
                             <div class="info">
                                 <div class="rating">
@@ -140,21 +161,21 @@
                 </div>
             </div>
         </section>
-        <section class="gallerys">
+        <section class="catagory">
             <div class="left wow rollIn">
-                <div class="photo"><img src="./images/ghedai.jpg" alt="ghedai"></div>
+                <div class="photo"><img src="./images/catagory1.png" alt="catagogy1"></div>
                 <div class="down">
-                    <div class="photo"><img src="./images/bban.jpg" alt="ban"></div>
-                    <div class="photo"><img src="./images/den.jpg" alt="tu"></div>
+                    <div class="photo"><img src="./images/catagory2.png" alt="catagory2"></div>
+                    <div class="photo"><img src="./images/catagory3.png" alt="catagogy3"></div>
                 </div>                  
             </div>
             <div class="right wow rollIn">
                 <div class="up">
-                    <div class="photo"><img src="./images/tu.jpg" alt="cho"></div>
-                    <div class="photo"><img src="./images/cho.jpg" alt="den"></div>
+                    <div class="photo"><img src="./images/catagory4.png" alt="catagogy4"></div>
+                    <div class="photo"><img src="./images/catagory5.png" alt="catagogy5"></div>
                 </div>
                 <div class="photo">
-                    <img src="./images/6.png" alt="#">
+                    <img src="./images/catagory6.png" alt="catagory6">
                     <a href="#" class="cate">Category Name</a>
                 </div>
             </div>
@@ -165,7 +186,7 @@
                 <p class="text">Praesent ut ligula non mi curabitur at lacus elit</p>
                 <div class="group">
                     <div class="card wow wow rollIn">
-                        <img src="./images/1.png" alt="Image">
+                        <a href="#"><img src="./images/deals1.png" alt="deals1"></a>
                         <div class="review">
                             <div class="info">
                                 <div class="rating">
@@ -185,9 +206,8 @@
                         </div>
                     </div>
                     <div class="card wow wow lightSpeedIn">
-                        <img src="./images/3.png" alt="Image">
-                        <div class="review">
-                            
+                        <a href="#"><img src="./images/deals2.png" alt="deals2"></a>
+                        <div class="review">  
                             <div class="info">
                                 <div class="rating">
                                     <span class="star">%</span>
@@ -206,7 +226,7 @@
                         </div>
                     </div>
                     <div class="card wow wow lightSpeedIn">
-                        <img src="./images/2.png" alt="Image">
+                        <a href="#"><img src="./images/deals3.png" alt="deals3"></a>
                         <div class="review">
                             <div class="info">
                                 <div class="rating">
@@ -226,7 +246,7 @@
                         </div>
                     </div>
                     <div class="card wow wow lightSpeedIn">
-                        <img src="./images/4.png" alt="Image">
+                        <a href="#"><img src="./images/deals4.png" alt="deals4"></a>
                         <div class="review">
                             <div class="info">
                                 <div class="rating">
@@ -276,7 +296,9 @@
                             <div class="day">Posted May 9,2020</div>
                             <div class="here">HERE WILL YOUR TITLE</div>
                             <p class="card-text">Lorem ipsum is simply dummy text of the printing and typese....</p>
-                            <div class="buttons">READ MORE</div>
+                            <div class="buttons">
+                                <a href="#">READ MORE</a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -286,7 +308,9 @@
                             <div class="day">Posted May 9,2020</div>
                             <div class="here">HERE WILL YOUR TITLE</div>
                             <p class="card-text">Lorem ipsum is simply dummy text of the printing and typese....</p>
-                            <div class="buttons">READ MORE</div>
+                            <div class="buttons">
+                                <a href="#">READ MORE</a>
+                            </div>                            
                         </div>
                     </div>
                     <div class="card">
@@ -296,7 +320,9 @@
                             <div class="day">Posted May 9,2020</div>
                             <div class="here">HERE WILL YOUR TITLE</div>
                             <p class="card-text">Lorem ipsum is simply dummy text of the printing and typese....</p>
-                            <div class="buttons">READ MORE</div>
+                            <div class="buttons">
+                                <a href="#">READ MORE</a>
+                            </div>
                         </div>
                     </div>
             </div>        
@@ -317,8 +343,8 @@
                 <p class="text">Praesent ut ligula non mi curabitur at lacus elit</p>
                 <div class="group">
                     <form action="#">
-                        <input class="input" type="email" placeholder=" abc">
-                        <a class="buttons" href="#">Subscrbe</a>
+                        <input class="input" type="email" placeholder=" ">
+                        <a class="buttons" href="#">SUBSCRIBE</a>
                     </form>
                 </div>
         
@@ -329,6 +355,10 @@
                     <img src="./images/logo.png" alt="#">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing e lit. Veli ducims voluptatibus neque illo repellat quisquam? Autem expeita earum quae laborum ipsum ad.</p>
                     <div class="icons">
+                        <a href="#" title="google plus icons"><img src="./images/google-plus.png"alt="google-plus"></a>
+                        <a href="#" title="online icons"><img src="./images/twitter-sign.png"alt="twitter-sign"></a>
+                        <a href="#" title="instagram icons"><img src="./images/instagram.png"alt="instagram"></a>
+                        <a href="#" title="facebook icons"><img src="./images/facebook.png"alt="facebook"></a>
                     </div>
                 </div>
                 <div class="card">
